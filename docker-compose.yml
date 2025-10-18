@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  mongodb:
+    image: mongo:4.4
+    container_name: book_crawler_mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: admin
+      MONGO_INITDB_ROOT_PASSWORD: password
+      MONGO_INITDB_DATABASE: book_crawler
+    volumes:
+      - mongodb_data:/data/db
+    networks:
+      - book_crawler_network
+
+  api:
+    build: .
+    container_name: book_crawler_api
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGODB_URL=mongodb://admin:password@mongodb:27017/book_crawler?authSource=admin
+      - DATABASE_NAME=book_crawler
+      - API_SECRET_KEY=your-secret-key-change-in-production
+      - LOG_LEVEL=INFO
+    depends_on:
+      - mongodb
+    networks:
+      - book_crawler_network
+    volumes:
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+
+  scheduler:
+    build: .
+    container_name: book_crawler_scheduler
+    restart: unless-stopped
+    command: ["python", "main.py", "scheduler"]
+    environment:
+      - MONGODB_URL=mongodb://admin:password@mongodb:27017/book_crawler?authSource=admin
+      - DATABASE_NAME=book_crawler
+      - LOG_LEVEL=INFO
+      - SMTP_USERNAME=raiyan.sharif.1234@gmail.com
+      - SMTP_PASSWORD=Asdf1234@
+      - ALERT_EMAIL=admin@filerskeepers.co
+    depends_on:
+      - mongodb
+    networks:
+      - book_crawler_network
+    volumes:
+      - ./logs:/app/logs
+      - ./reports:/app/reports
+
+volumes:
+  mongodb_data:
+
+networks:
+  book_crawler_network:
+    driver: bridge
