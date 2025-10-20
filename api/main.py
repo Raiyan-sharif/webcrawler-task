@@ -22,6 +22,17 @@ async def lifespan(app: FastAPI):
     """Application lifespan manager"""
     # Startup
     await db.connect()
+    # Optionally auto-create a default API key for local/dev and write it to a file
+    if config.AUTO_CREATE_API_KEY:
+        try:
+            api_key = await create_api_key(config.DEFAULT_API_KEY_NAME)
+            import os
+            os.makedirs(os.path.dirname(config.DEFAULT_API_KEY_OUTPUT), exist_ok=True)
+            with open(config.DEFAULT_API_KEY_OUTPUT, 'w') as f:
+                f.write(api_key.key)
+        except Exception:
+            # Swallow errors so startup continues
+            pass
     yield
     # Shutdown
     await db.disconnect()

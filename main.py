@@ -18,6 +18,7 @@ from utilities.database import db
 from crawler.book_crawler import BookCrawler
 from scheduler.change_detector import ChangeDetector
 from api.main import app
+from api.auth import create_api_key
 import uvicorn
 
 
@@ -72,8 +73,14 @@ async def main():
     parser = argparse.ArgumentParser(description="Book Crawler Application")
     parser.add_argument(
         "command",
-        choices=["crawler", "scheduler", "api", "all"],
+        choices=["crawler", "scheduler", "api", "all", "create-key"],
         help="Command to run: crawler, scheduler, api, or all"
+    )
+    parser.add_argument(
+        "--name",
+        type=str,
+        help="Name for the API key (for create-key command)",
+        default="default-key"
     )
     parser.add_argument(
         "--max-books",
@@ -102,6 +109,10 @@ async def main():
         elif args.command == "api":
             await db.disconnect()  # API will manage its own connection
             run_api()
+        elif args.command == "create-key":
+            # Create an API key and print it to stdout
+            api_key = await create_api_key(args.name)
+            print(api_key.key, end="")
         elif args.command == "all":
             # Run crawler first, then start scheduler and API
             await run_crawler()

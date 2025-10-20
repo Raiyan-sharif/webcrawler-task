@@ -133,25 +133,42 @@ class BookCrawler:
                 category_link = breadcrumb.select('a')[-1]
                 category = category_link.text.strip() if category_link else ""
             
-            # Price information
-            price_including_tax_text = soup.select_one('.price_color').text if soup.select_one('.price_color') else "£0.00"
-            price_including_tax = self.extract_price(price_including_tax_text)
-            
-            # Price excluding tax (usually same as including tax for this site)
-            price_excluding_tax = price_including_tax
-            
-            # Availability
-            availability_element = soup.select_one('.availability')
-            availability = availability_element.text.strip() if availability_element else "Unknown"
-            
-            # Number of reviews
-            reviews_element = soup.select_one('th:contains("Number of reviews") + td')
+            # Product information table parsing (more robust)
+            price_including_tax = 0.0
+            price_excluding_tax = 0.0
+            availability = "Unknown"
             number_of_reviews = 0
-            if reviews_element:
-                try:
-                    number_of_reviews = int(reviews_element.text.strip())
-                except ValueError:
-                    pass
+
+            product_table = soup.select_one('table.table.table-striped')
+            if product_table:
+                for row in product_table.select('tr'):
+                    header_el = row.select_one('th')
+                    value_el = row.select_one('td')
+                    if not header_el or not value_el:
+                        continue
+                    header = header_el.text.strip()
+                    value = value_el.text.strip()
+                    if header == 'Price (incl. tax)':
+                        price_including_tax = self.extract_price(value)
+                    elif header == 'Price (excl. tax)':
+                        price_excluding_tax = self.extract_price(value)
+                    elif header == 'Availability':
+                        availability = value
+                    elif header == 'Number of reviews':
+                        try:
+                            number_of_reviews = int(value)
+                        except ValueError:
+                            number_of_reviews = 0
+
+            # Fallbacks if table not found
+            if price_including_tax == 0.0:
+                price_including_tax_text = soup.select_one('.price_color').text if soup.select_one('.price_color') else "£0.00"
+                price_including_tax = self.extract_price(price_including_tax_text)
+            if price_excluding_tax == 0.0:
+                price_excluding_tax = price_including_tax
+            if availability == "Unknown":
+                availability_element = soup.select_one('.availability')
+                availability = availability_element.text.strip() if availability_element else "Unknown"
             
             # Image URL
             image_element = soup.select_one('#product_gallery img')
@@ -226,7 +243,8 @@ class BookCrawler:
                 break
                 
             for link in book_links:
-                book_url = urljoin(self.base_url, link.get('href', ''))
+                # Build absolute URL based on the listing page URL to handle relative paths like '../../../'
+                book_url = urljoin(page_url, link.get('href', ''))
                 book_urls.append(book_url)
             
             logger.info(f"Found {len(book_links)} books on page {page_num}")

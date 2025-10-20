@@ -17,6 +17,10 @@ class Config:
     API_SECRET_KEY: str = os.getenv("API_SECRET_KEY", "your-secret-key-here")
     API_RATE_LIMIT: int = int(os.getenv("API_RATE_LIMIT", "100"))
     API_RATE_WINDOW: int = int(os.getenv("API_RATE_WINDOW", "3600"))
+    # Auto-create API key on startup (for convenience in local/dev)
+    AUTO_CREATE_API_KEY: bool = os.getenv("AUTO_CREATE_API_KEY", "false").lower() in {"1", "true", "yes"}
+    DEFAULT_API_KEY_NAME: str = os.getenv("DEFAULT_API_KEY_NAME", "default-key")
+    DEFAULT_API_KEY_OUTPUT: str = os.getenv("DEFAULT_API_KEY_OUTPUT", "logs/default_api_key.txt")
     
     # Crawler Configuration
     CRAWLER_BASE_URL: str = os.getenv("CRAWLER_BASE_URL", "https://books.toscrape.com")

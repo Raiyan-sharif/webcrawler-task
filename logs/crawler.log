@@ -1,0 +1,245 @@
+2025-10-20 10:52:24.173 | INFO     | utilities.database:connect:25 - Connected to MongoDB database: book_crawler
+2025-10-20 10:52:24.173 | INFO     | utilities.database:connect:25 - Connected to MongoDB database: book_crawler
+2025-10-20 10:52:24.239 | INFO     | utilities.database:create_indexes:82 - Database indexes created successfully
+2025-10-20 10:52:24.240 | INFO     | __main__:run_scheduler:39 - Starting change detector scheduler...
+2025-10-20 10:52:24.241 | INFO     | scheduler.change_detector:start_scheduler:37 - Scheduler started - Daily crawl scheduled
+2025-10-20 10:52:24.241 | INFO     | __main__:run_scheduler:45 - Change detector started. Press Ctrl+C to stop.
+2025-10-20 10:52:24.242 | INFO     | utilities.database:create_indexes:82 - Database indexes created successfully
+2025-10-20 10:52:24.243 | INFO     | utilities.database:disconnect:38 - Disconnected from MongoDB
+2025-10-20 10:52:24.243 | INFO     | __main__:run_api:59 - Starting API server...
+2025-10-20 11:06:20.499 | INFO     | utilities.database:disconnect:38 - Disconnected from MongoDB
+2025-10-20 11:06:30.707 | INFO     | utilities.database:connect:25 - Connected to MongoDB database: book_crawler
+2025-10-20 11:06:30.707 | INFO     | utilities.database:connect:25 - Connected to MongoDB database: book_crawler
+2025-10-20 11:06:30.709 | INFO     | utilities.database:create_indexes:82 - Database indexes created successfully
+2025-10-20 11:06:30.709 | INFO     | __main__:run_scheduler:39 - Starting change detector scheduler...
+2025-10-20 11:06:30.709 | INFO     | utilities.database:create_indexes:82 - Database indexes created successfully
+2025-10-20 11:06:30.710 | INFO     | utilities.database:disconnect:38 - Disconnected from MongoDB
+2025-10-20 11:06:30.711 | INFO     | __main__:run_api:59 - Starting API server...
+2025-10-20 11:06:30.712 | INFO     | scheduler.change_detector:start_scheduler:37 - Scheduler started - Daily crawl scheduled
+2025-10-20 11:06:30.712 | INFO     | __main__:run_scheduler:45 - Change detector started. Press Ctrl+C to stop.
+2025-10-20 11:24:08.851 | INFO     | utilities.database:connect:25 - Connected to MongoDB database: book_crawler
+2025-10-20 11:24:08.853 | INFO     | utilities.database:create_indexes:82 - Database indexes created successfully
+2025-10-20 11:24:08.854 | INFO     | __main__:run_crawler:26 - Starting book crawler...
+2025-10-20 11:24:08.859 | INFO     | crawler.book_crawler:start_crawl:46 - Started crawl session: 68f61bd87608e1af8162c64c
+2025-10-20 11:24:08.859 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 1: https://books.toscrape.com/catalogue/page-1.html
+2025-10-20 11:24:10.709 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 1
+2025-10-20 11:24:11.211 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 2: https://books.toscrape.com/catalogue/page-2.html
+2025-10-20 11:24:11.885 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 2
+2025-10-20 11:24:12.389 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 3: https://books.toscrape.com/catalogue/page-3.html
+2025-10-20 11:24:13.366 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 3
+2025-10-20 11:24:13.868 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 4: https://books.toscrape.com/catalogue/page-4.html
+2025-10-20 11:24:14.542 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 4
+2025-10-20 11:24:15.046 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 5: https://books.toscrape.com/catalogue/page-5.html
+2025-10-20 11:24:15.878 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 5
+2025-10-20 11:24:16.385 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 6: https://books.toscrape.com/catalogue/page-6.html
+2025-10-20 11:24:17.047 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 6
+2025-10-20 11:24:17.549 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 7: https://books.toscrape.com/catalogue/page-7.html
+2025-10-20 11:24:18.217 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 7
+2025-10-20 11:24:18.719 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 8: https://books.toscrape.com/catalogue/page-8.html
+2025-10-20 11:24:19.388 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 8
+2025-10-20 11:24:19.891 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 9: https://books.toscrape.com/catalogue/page-9.html
+2025-10-20 11:24:20.597 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 9
+2025-10-20 11:24:21.102 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 10: https://books.toscrape.com/catalogue/page-10.html
+2025-10-20 11:24:21.916 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 10
+2025-10-20 11:24:22.422 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 11: https://books.toscrape.com/catalogue/page-11.html
+2025-10-20 11:24:22.794 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 11
+2025-10-20 11:24:23.297 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 12: https://books.toscrape.com/catalogue/page-12.html
+2025-10-20 11:24:23.960 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 12
+2025-10-20 11:24:24.462 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 13: https://books.toscrape.com/catalogue/page-13.html
+2025-10-20 11:24:25.183 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 13
+2025-10-20 11:24:25.687 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 14: https://books.toscrape.com/catalogue/page-14.html
+2025-10-20 11:24:26.027 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 14
+2025-10-20 11:24:26.529 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 15: https://books.toscrape.com/catalogue/page-15.html
+2025-10-20 11:24:26.873 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 15
+2025-10-20 11:24:27.376 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 16: https://books.toscrape.com/catalogue/page-16.html
+2025-10-20 11:24:28.089 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 16
+2025-10-20 11:24:28.595 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 17: https://books.toscrape.com/catalogue/page-17.html
+2025-10-20 11:24:28.949 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 17
+2025-10-20 11:24:29.452 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 18: https://books.toscrape.com/catalogue/page-18.html
+2025-10-20 11:24:30.118 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 18
+2025-10-20 11:24:30.620 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 19: https://books.toscrape.com/catalogue/page-19.html
+2025-10-20 11:24:30.972 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 19
+2025-10-20 11:24:31.475 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 20: https://books.toscrape.com/catalogue/page-20.html
+2025-10-20 11:24:31.843 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 20
+2025-10-20 11:24:32.347 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 21: https://books.toscrape.com/catalogue/page-21.html
+2025-10-20 11:24:32.757 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 21
+2025-10-20 11:24:33.259 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 22: https://books.toscrape.com/catalogue/page-22.html
+2025-10-20 11:24:33.617 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 22
+2025-10-20 11:24:34.120 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 23: https://books.toscrape.com/catalogue/page-23.html
+2025-10-20 11:24:34.466 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 23
+2025-10-20 11:24:34.969 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 24: https://books.toscrape.com/catalogue/page-24.html
+2025-10-20 11:24:35.323 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 24
+2025-10-20 11:24:35.828 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 25: https://books.toscrape.com/catalogue/page-25.html
+2025-10-20 11:24:36.501 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 25
+2025-10-20 11:24:37.005 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 26: https://books.toscrape.com/catalogue/page-26.html
+2025-10-20 11:24:37.707 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 26
+2025-10-20 11:24:38.209 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 27: https://books.toscrape.com/catalogue/page-27.html
+2025-10-20 11:24:38.647 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 27
+2025-10-20 11:24:39.149 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 28: https://books.toscrape.com/catalogue/page-28.html
+2025-10-20 11:24:39.513 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 28
+2025-10-20 11:24:40.015 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 29: https://books.toscrape.com/catalogue/page-29.html
+2025-10-20 11:24:40.547 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 29
+2025-10-20 11:24:41.050 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 30: https://books.toscrape.com/catalogue/page-30.html
+2025-10-20 11:24:41.717 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 30
+2025-10-20 11:24:42.219 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 31: https://books.toscrape.com/catalogue/page-31.html
+2025-10-20 11:24:42.992 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 31
+2025-10-20 11:24:43.497 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 32: https://books.toscrape.com/catalogue/page-32.html
+2025-10-20 11:24:44.148 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 32
+2025-10-20 11:24:44.649 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 33: https://books.toscrape.com/catalogue/page-33.html
+2025-10-20 11:24:45.306 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 33
+2025-10-20 11:24:45.808 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 34: https://books.toscrape.com/catalogue/page-34.html
+2025-10-20 11:24:46.572 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 34
+2025-10-20 11:24:47.074 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 35: https://books.toscrape.com/catalogue/page-35.html
+2025-10-20 11:24:47.822 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 35
+2025-10-20 11:24:48.328 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 36: https://books.toscrape.com/catalogue/page-36.html
+2025-10-20 11:24:48.991 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 36
+2025-10-20 11:24:49.494 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 37: https://books.toscrape.com/catalogue/page-37.html
+2025-10-20 11:24:50.157 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 37
+2025-10-20 11:24:50.661 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 38: https://books.toscrape.com/catalogue/page-38.html
+2025-10-20 11:24:51.323 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 38
+2025-10-20 11:24:51.827 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 39: https://books.toscrape.com/catalogue/page-39.html
+2025-10-20 11:24:52.496 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 39
+2025-10-20 11:24:52.997 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 40: https://books.toscrape.com/catalogue/page-40.html
+2025-10-20 11:24:53.738 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 40
+2025-10-20 11:24:54.241 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 41: https://books.toscrape.com/catalogue/page-41.html
+2025-10-20 11:24:54.897 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 41
+2025-10-20 11:24:55.400 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 42: https://books.toscrape.com/catalogue/page-42.html
+2025-10-20 11:24:56.108 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 42
+2025-10-20 11:24:56.613 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 43: https://books.toscrape.com/catalogue/page-43.html
+2025-10-20 11:24:57.321 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 43
+2025-10-20 11:24:57.828 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 44: https://books.toscrape.com/catalogue/page-44.html
+2025-10-20 11:24:58.537 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 44
+2025-10-20 11:24:59.042 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 45: https://books.toscrape.com/catalogue/page-45.html
+2025-10-20 11:25:00.005 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 45
+2025-10-20 11:25:00.507 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 46: https://books.toscrape.com/catalogue/page-46.html
+2025-10-20 11:25:01.286 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 46
+2025-10-20 11:25:01.790 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 47: https://books.toscrape.com/catalogue/page-47.html
+2025-10-20 11:25:02.147 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 47
+2025-10-20 11:25:02.654 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 48: https://books.toscrape.com/catalogue/page-48.html
+2025-10-20 11:25:03.004 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 48
+2025-10-20 11:25:03.506 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 49: https://books.toscrape.com/catalogue/page-49.html
+2025-10-20 11:25:03.981 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 49
+2025-10-20 11:25:04.484 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 50: https://books.toscrape.com/catalogue/page-50.html
+2025-10-20 11:25:04.842 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 50
+2025-10-20 11:25:05.344 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 51: https://books.toscrape.com/catalogue/page-51.html
+2025-10-20 11:25:05.754 | ERROR    | crawler.book_crawler:fetch_page:84 - Unexpected error fetching https://books.toscrape.com/catalogue/page-51.html: Client error '404 Not Found' for url 'https://books.toscrape.com/catalogue/page-51.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-10-20 11:25:05.755 | INFO     | crawler.book_crawler:get_all_book_urls:235 - No more pages found at page 51
+2025-10-20 11:25:05.756 | INFO     | crawler.book_crawler:get_all_book_urls:256 - Total book URLs found: 1000
+2025-10-20 11:26:35.998 | INFO     | crawler.book_crawler:complete_crawl:63 - Completed crawl session: 68f61bd87608e1af8162c64c
+2025-10-20 11:26:35.999 | INFO     | crawler.book_crawler:crawl_books:315 - Crawling completed. Found 1000 books with 0 errors
+2025-10-20 11:26:35.999 | INFO     | __main__:run_crawler:31 - Successfully crawled 1000 books
+2025-10-20 11:26:36.003 | INFO     | utilities.database:disconnect:38 - Disconnected from MongoDB
+2025-10-20 11:27:47.833 | INFO     | utilities.database:connect:25 - Connected to MongoDB database: book_crawler
+2025-10-20 11:27:47.837 | INFO     | utilities.database:create_indexes:82 - Database indexes created successfully
+2025-10-20 11:27:47.838 | INFO     | __main__:run_crawler:26 - Starting book crawler...
+2025-10-20 11:27:47.843 | INFO     | crawler.book_crawler:start_crawl:46 - Started crawl session: 68f61cb3495401ee13290b19
+2025-10-20 11:27:47.843 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 1: https://books.toscrape.com/catalogue/page-1.html
+2025-10-20 11:27:49.346 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 1
+2025-10-20 11:27:49.848 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 2: https://books.toscrape.com/catalogue/page-2.html
+2025-10-20 11:27:50.460 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 2
+2025-10-20 11:27:50.963 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 3: https://books.toscrape.com/catalogue/page-3.html
+2025-10-20 11:27:51.595 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 3
+2025-10-20 11:27:52.100 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 4: https://books.toscrape.com/catalogue/page-4.html
+2025-10-20 11:27:53.095 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 4
+2025-10-20 11:27:53.597 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 5: https://books.toscrape.com/catalogue/page-5.html
+2025-10-20 11:27:53.936 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 5
+2025-10-20 11:27:54.438 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 6: https://books.toscrape.com/catalogue/page-6.html
+2025-10-20 11:27:54.868 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 6
+2025-10-20 11:27:55.369 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 7: https://books.toscrape.com/catalogue/page-7.html
+2025-10-20 11:27:55.998 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 7
+2025-10-20 11:27:56.500 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 8: https://books.toscrape.com/catalogue/page-8.html
+2025-10-20 11:27:56.933 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 8
+2025-10-20 11:27:57.439 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 9: https://books.toscrape.com/catalogue/page-9.html
+2025-10-20 11:27:58.063 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 9
+2025-10-20 11:27:58.566 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 10: https://books.toscrape.com/catalogue/page-10.html
+2025-10-20 11:27:58.927 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 10
+2025-10-20 11:27:59.431 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 11: https://books.toscrape.com/catalogue/page-11.html
+2025-10-20 11:27:59.816 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 11
+2025-10-20 11:28:00.324 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 12: https://books.toscrape.com/catalogue/page-12.html
+2025-10-20 11:28:00.650 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 12
+2025-10-20 11:28:01.153 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 13: https://books.toscrape.com/catalogue/page-13.html
+2025-10-20 11:28:01.478 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 13
+2025-10-20 11:28:01.985 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 14: https://books.toscrape.com/catalogue/page-14.html
+2025-10-20 11:28:02.329 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 14
+2025-10-20 11:28:02.834 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 15: https://books.toscrape.com/catalogue/page-15.html
+2025-10-20 11:28:03.164 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 15
+2025-10-20 11:28:03.669 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 16: https://books.toscrape.com/catalogue/page-16.html
+2025-10-20 11:28:04.004 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 16
+2025-10-20 11:28:04.506 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 17: https://books.toscrape.com/catalogue/page-17.html
+2025-10-20 11:28:04.938 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 17
+2025-10-20 11:28:05.440 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 18: https://books.toscrape.com/catalogue/page-18.html
+2025-10-20 11:28:05.825 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 18
+2025-10-20 11:28:06.332 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 19: https://books.toscrape.com/catalogue/page-19.html
+2025-10-20 11:28:06.682 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 19
+2025-10-20 11:28:07.184 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 20: https://books.toscrape.com/catalogue/page-20.html
+2025-10-20 11:28:07.515 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 20
+2025-10-20 11:28:08.018 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 21: https://books.toscrape.com/catalogue/page-21.html
+2025-10-20 11:28:08.431 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 21
+2025-10-20 11:28:08.936 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 22: https://books.toscrape.com/catalogue/page-22.html
+2025-10-20 11:28:09.837 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 22
+2025-10-20 11:28:10.342 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 23: https://books.toscrape.com/catalogue/page-23.html
+2025-10-20 11:28:10.748 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 23
+2025-10-20 11:28:11.250 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 24: https://books.toscrape.com/catalogue/page-24.html
+2025-10-20 11:28:11.944 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 24
+2025-10-20 11:28:12.447 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 25: https://books.toscrape.com/catalogue/page-25.html
+2025-10-20 11:28:13.283 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 25
+2025-10-20 11:28:13.787 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 26: https://books.toscrape.com/catalogue/page-26.html
+2025-10-20 11:28:14.120 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 26
+2025-10-20 11:28:14.627 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 27: https://books.toscrape.com/catalogue/page-27.html
+2025-10-20 11:28:14.959 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 27
+2025-10-20 11:28:15.462 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 28: https://books.toscrape.com/catalogue/page-28.html
+2025-10-20 11:28:15.860 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 28
+2025-10-20 11:28:16.361 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 29: https://books.toscrape.com/catalogue/page-29.html
+2025-10-20 11:28:16.674 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 29
+2025-10-20 11:28:17.181 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 30: https://books.toscrape.com/catalogue/page-30.html
+2025-10-20 11:28:17.899 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 30
+2025-10-20 11:28:18.406 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 31: https://books.toscrape.com/catalogue/page-31.html
+2025-10-20 11:28:18.802 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 31
+2025-10-20 11:28:19.305 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 32: https://books.toscrape.com/catalogue/page-32.html
+2025-10-20 11:28:19.649 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 32
+2025-10-20 11:28:20.155 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 33: https://books.toscrape.com/catalogue/page-33.html
+2025-10-20 11:28:21.095 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 33
+2025-10-20 11:28:21.598 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 34: https://books.toscrape.com/catalogue/page-34.html
+2025-10-20 11:28:21.924 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 34
+2025-10-20 11:28:22.425 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 35: https://books.toscrape.com/catalogue/page-35.html
+2025-10-20 11:28:23.047 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 35
+2025-10-20 11:28:23.551 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 36: https://books.toscrape.com/catalogue/page-36.html
+2025-10-20 11:28:24.257 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 36
+2025-10-20 11:28:24.762 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 37: https://books.toscrape.com/catalogue/page-37.html
+2025-10-20 11:28:25.555 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 37
+2025-10-20 11:28:26.059 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 38: https://books.toscrape.com/catalogue/page-38.html
+2025-10-20 11:28:26.789 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 38
+2025-10-20 11:28:27.295 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 39: https://books.toscrape.com/catalogue/page-39.html
+2025-10-20 11:28:28.127 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 39
+2025-10-20 11:28:28.634 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 40: https://books.toscrape.com/catalogue/page-40.html
+2025-10-20 11:28:28.969 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 40
+2025-10-20 11:28:29.470 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 41: https://books.toscrape.com/catalogue/page-41.html
+2025-10-20 11:28:30.037 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 41
+2025-10-20 11:28:30.541 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 42: https://books.toscrape.com/catalogue/page-42.html
+2025-10-20 11:28:31.496 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 42
+2025-10-20 11:28:31.998 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 43: https://books.toscrape.com/catalogue/page-43.html
+2025-10-20 11:28:35.933 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 43
+2025-10-20 11:28:36.436 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 44: https://books.toscrape.com/catalogue/page-44.html
+2025-10-20 11:28:37.192 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 44
+2025-10-20 11:28:37.695 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 45: https://books.toscrape.com/catalogue/page-45.html
+2025-10-20 11:28:38.624 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 45
+2025-10-20 11:28:39.129 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 46: https://books.toscrape.com/catalogue/page-46.html
+2025-10-20 11:28:40.151 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 46
+2025-10-20 11:28:40.653 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 47: https://books.toscrape.com/catalogue/page-47.html
+2025-10-20 11:28:41.476 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 47
+2025-10-20 11:28:41.981 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 48: https://books.toscrape.com/catalogue/page-48.html
+2025-10-20 11:28:42.713 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 48
+2025-10-20 11:28:43.215 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 49: https://books.toscrape.com/catalogue/page-49.html
+2025-10-20 11:28:43.861 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 49
+2025-10-20 11:28:44.363 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 50: https://books.toscrape.com/catalogue/page-50.html
+2025-10-20 11:28:45.017 | INFO     | crawler.book_crawler:get_all_book_urls:250 - Found 20 books on page 50
+2025-10-20 11:28:45.519 | INFO     | crawler.book_crawler:get_all_book_urls:231 - Fetching page 51: https://books.toscrape.com/catalogue/page-51.html
+2025-10-20 11:28:45.847 | ERROR    | crawler.book_crawler:fetch_page:84 - Unexpected error fetching https://books.toscrape.com/catalogue/page-51.html: Client error '404 Not Found' for url 'https://books.toscrape.com/catalogue/page-51.html'
+For more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/404
+2025-10-20 11:28:45.847 | INFO     | crawler.book_crawler:get_all_book_urls:235 - No more pages found at page 51
+2025-10-20 11:28:45.847 | INFO     | crawler.book_crawler:get_all_book_urls:256 - Total book URLs found: 1000
+2025-10-20 11:30:21.745 | INFO     | crawler.book_crawler:complete_crawl:63 - Completed crawl session: 68f61cb3495401ee13290b19
+2025-10-20 11:30:21.746 | INFO     | crawler.book_crawler:crawl_books:315 - Crawling completed. Found 1000 books with 0 errors
+2025-10-20 11:30:21.746 | INFO     | __main__:run_crawler:31 - Successfully crawled 1000 books
+2025-10-20 11:30:21.751 | INFO     | utilities.database:disconnect:38 - Disconnected from MongoDB
